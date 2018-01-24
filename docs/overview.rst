@@ -1,11 +1,12 @@
-Getting Started
-===============
+Getting Started はじめに
+========================
 
-Installation
-------------
+Installation　インストール
+-------------------------
 
 ``python-binance`` is available on `PYPI <https://pypi.python.org/pypi/python-binance/>`_.
 Install with ``pip``:
+``python-binance``は``pip``により`PYPI <https://pypi.python.org/pypi/python-binance/>`_からインストールできます。
 
 .. code:: bash
 
@@ -15,41 +16,52 @@ Install with ``pip``:
 
 If you see errors building Twisted indication Microsoft Visual C++ is required you may need to install the Visual C++ Build Tools
 refer to the `Python Wiki on Widows Compilers <https://wiki.python.org/moin/WindowsCompilers>`_ for your relevant version.
+ビルドエラーが発生する場合、Microsoft Visual C++が必要です。`Python Wiki on Widows Compilers <https://wiki.python.org/moin/WindowsCompilers>`_を参照して、Visual C++ Build Toolsをインストールしてください。
 
-Register on Binance
--------------------
+Register on Binance　Binanceでの登録
+----------------------------------------------
 
 Firstly `register an account with Binance <https://www.binance.com/register.html?ref=10099792>`_.
 
-Generate an API Key
--------------------
+まず最初に、`Binanceで登録 <https://www.binance.com/register.html?ref=10099792>`_ してください。
+
+Generate an API Key API Keyの取得
+---------------------------------
 
 To use signed account methods you are required to `create an API Key  <https://www.binance.com/userCenter/createApi.html>`_.
+登録した口座でプログラムを使用するには、`API Keyを作成  <https://www.binance.com/userCenter/createApi.html>`_する必要があります。
 
-Initialise the client
----------------------
+Initialise the client　クライアントの初期化
+-------------------------------------------
 
 Pass your API Key and Secret
+API KeyとSecretを設定します。
 
 .. code:: python
 
     from binance.client import Client
     client = Client(api_key, api_secret)
 
-Making API Calls
-----------------
+Making API Calls　APIの呼び出し
+------------------------------
 
 Every method supports the passing of arbitrary parameters via keyword matching those in the`Binance API documentation <https://github.com/binance-exchange/binance-official-api-docs>`_.
 These keyword arguments will be sent directly to the relevant endpoint.
+`Binance API documentation <https://github.com/binance-exchange/binance-official-api-docs>`_で設定されているキーワードと同じ単語を使用した各メソッドは、任意のパラメータを対応したエンドポイントに渡します。
 
 Each API method returns a dictionary of the JSON response as per the `Binance API documentation <https://github.com/binance-exchange/binance-official-api-docs>`_.
 The docstring of each method in the code references the endpoint it implements.
+`Binance API documentation <https://github.com/binance-exchange/binance-official-api-docs>`_に記載されている通り、各メソッドは、JSONレスポンスのディクショナリーを返します。
+各メソッドのコードのdocstringは、元となったエンドポイントの内容を参照しています。
 
 The Binance API documentation references a `timestamp` parameter, this is generated for you where required.
+Binance API documentationは、`timestamp`パラメータを参照しますが、要求された場合は生成されます。
 
 Some methods have a `recvWindow` parameter for `timing security, see Binance documentation <https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#timing-security>`_.
+メソッドによっては`recvWindow`パラメータがあります。`タイミングセキュリティーのために使用されます。詳細はBinance documentationを参照してください。 <https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#timing-security>`_
 
 API Endpoints are rate limited by Binance at 20 requests per second, ask them if you require more.
+APIエンドポイントのレートリミットは、Binanceにより秒間20リクエストに制限されています。制限を解除したい場合は、直接お問い合わせください。
 
 API Rate Limit
 --------------
