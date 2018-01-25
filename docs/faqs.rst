@@ -1,4 +1,4 @@
-FAQ
+FAQ　よくある質問
 =======
 
 *Q: Why do I get "Timestamp for this request is not valid"*
