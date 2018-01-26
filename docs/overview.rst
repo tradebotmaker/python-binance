@@ -4,6 +4,8 @@
 インストール
 -------------------------
 
+``english test`` and `english <https:://www.test2.com>`_
+
 ``python-binance``は``pip``により`PYPI <https://pypi.python.org/pypi/python-binance/>`_からインストールできます。
 
 .. code:: bash
