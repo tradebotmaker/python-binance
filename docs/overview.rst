@@ -4,7 +4,7 @@
 インストール
 -------------------------
 
-``python-binance``は``pip``により`PYPI<https://pypi.python.org/pypi/python-binance/>`_からインストールできます。
+\`\`python-binance\`\`は``pip``により\`PYPI<https://pypi.python.org/pypi/python-binance/>\`_からインストールできます。
 
 .. code:: bash
 
