@@ -23,7 +23,7 @@
 
 **Windows**
 
-ビルドエラーが発生する場合、Microsoft Visual C++が必要です。 `Python Wiki on Widows Compilers<https://wiki.python.org/moin/WindowsCompilers>`_ を参照して、Visual C++ Build Toolsをインストールしてください。
+ビルドエラーが発生する場合、Microsoft Visual C++が必要です。 `Python Wiki on Widows Compilers <https://wiki.python.org/moin/WindowsCompilers>`_ を参照して、Visual C++ Build Toolsをインストールしてください。
 
 Binanceでの登録
 ----------------------------------------------
