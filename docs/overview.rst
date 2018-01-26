@@ -7,7 +7,7 @@
 ``english test`` and `english <https:://www.test2.com>`_
 ``english 日本語 test`` and `english　日本語 <https:://www.test2.com>`_
 
-``python-binance`` は ` 日本語 <https://pypi.python.org/pypi/python-binance/>`_ 確認
+``python-binance`` は `e 日本語 <https://pypi.python.org/pypi/python-binance/>`_ 確認
 
 ``python-binance``は``pip``により`PYPI <https://pypi.python.org/pypi/python-binance/>`_からインストールできます。
 
