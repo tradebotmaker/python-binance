@@ -23,7 +23,7 @@ Register on Binance　Binanceでの登録
 
 Firstly `register an account with Binance <https://www.binance.com/register.html?ref=10099792>`_.
 
-まず最初に、`Binanceで登録 <https://www.binance.com/register.html?ref=10099792>`_ してください。
+まず最初に、`Binanceで登録 <https://www.binance.com/?ref=21077398>`_ してください。
 
 Generate an API Key API Keyの取得
 ---------------------------------
