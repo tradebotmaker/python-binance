@@ -33,7 +33,7 @@ Binanceでの登録
 API Keyの取得
 ---------------------------------
 
-登録した口座でプログラムを使用するには、`API Keyを作成<https://www.binance.com/userCenter/createApi.html>`_する必要があります。
+登録した口座でプログラムを使用するには、 `API Keyを作成 <https://www.binance.com/userCenter/createApi.html>`_ する必要があります。
 
 クライアントの初期化
 -------------------------------------------
@@ -48,21 +48,21 @@ API KeyとSecretを設定します。
 APIの呼び出し
 ------------------------------
 
-`Binance API documentation<https://github.com/binance-exchange/binance-official-api-docs>`_で設定されているキーワードと同じ単語を使用した各メソッドは、任意のパラメータを対応したエンドポイントに渡します。
+`Binance API documentation <https://github.com/binance-exchange/binance-official-api-docs>`_ で設定されているキーワードと同じ単語を使用した各メソッドは、任意のパラメータを対応したエンドポイントに渡します。
 
-`Binance API documentation<https://github.com/binance-exchange/binance-official-api-docs>`_に記載されている通り、各メソッドは、JSONレスポンスのディクショナリーを返します。
+`Binance API documentation <https://github.com/binance-exchange/binance-official-api-docs>`_ に記載されている通り、各メソッドは、JSONレスポンスのディクショナリーを返します。
 各メソッドのコードのdocstringは、元となったエンドポイントの内容を参照しています。
 
-Binance API documentationは、`timestamp`パラメータを参照しますが、要求される場合は生成されます。
+Binance API documentationは、 `timestamp` パラメータを参照しますが、要求される場合は生成されます。
 
-メソッドによっては`recvWindow`パラメータがあります。`タイミングセキュリティーのために使用されます。詳細はBinance documentationを参照してください。<https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#timing-security>`_
+メソッドによっては `recvWindow` パラメータがあります。 `タイミングセキュリティーのために使用されます。詳細はBinance documentationを参照してください。 <https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#timing-security>`_
 
 APIエンドポイントのレートリミットは、Binanceにより秒間20リクエストに制限されています。制限を解除したい場合は、直接お問い合わせください。
 
 APIレートリミット
 --------------
 
-`get_exchange_info()<binance.html#binance.client.Client.get_exchange_info>`_を確認して、最新のレートリミットに関する情報を入手してください。
+`get_exchange_info() <binance.html#binance.client.Client.get_exchange_info>`_ を確認して、最新のレートリミットに関する情報を入手してください。
 
 現時点でのBinanceのレートリミット：
 
@@ -71,14 +71,14 @@ APIレートリミット
 - 24時間に100,000の注文
 
 呼び出すメソッドによっては、全ての通貨ペアの情報を読み込む場合など、他のメソッドよりも負荷がかかる場合があります。
-詳細は、`official Binance documentation<https://github.com/binance-exchange/binance-official-api-docs`_ をご確認ください。
+詳細は、 `official Binance documentation <https://github.com/binance-exchange/binance-official-api-docs>`_ をご確認ください。
 
 .. image:: https://analytics-pixel.appspot.com/UA-111417213-1/github/python-binance/docs/overview?pixel
 
 Requestの設定
 --------------------------------
 
-`python-binance` は、 `requests<http://docs.python-requests.org/en/master/>`_ ライブラリを使用します。
+`python-binance` は、 `requests <http://docs.python-requests.org/en/master/>`_ ライブラリを使用します。
 
 クライアントを作成後、全てのAPIコールに対し、カスタムリクエストパラメータを設定できます。
 
@@ -94,7 +94,7 @@ Requestの設定
     client = Client("api-key", "api-secret", {"verify": False, "timeout": 20})
     client.get_all_orders(symbol='BNBBTC', requests_params={'timeout': 5})
 
-全てのオプションについては、`requests documentation<http://docs.python-requests.org/en/master/>`_を参照してください。
+全てのオプションについては、 `requests documentation <http://docs.python-requests.org/en/master/>`_ を参照してください。
 
 **プロキシ設定**
 
@@ -115,7 +115,7 @@ Requestの設定
 
 または、リクエスト処理に必要な場合は、プロキシ環境変数を設定することもできます。
 
-Linux 環境変数の設定例（参照：`requests Proxies documentation<http://docs.python-requests.org/en/master/user/advanced/#proxies>`_ ）は下記の通りです。
+Linux 環境変数の設定例（参照： `requests Proxies documentation <http://docs.python-requests.org/en/master/user/advanced/#proxies>`_ ）は下記の通りです。
 
 .. code-block:: bash
 
