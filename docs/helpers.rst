@@ -1,4 +1,4 @@
-Helper Functions
+Helper Functions　ヘルパー関数
 ================
 
 .. autoclass:: binance.helpers
