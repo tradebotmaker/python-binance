@@ -1,21 +1,17 @@
-Account Endpoints アカウントエンドポイント
+アカウントエンドポイント
 =================
 
-Orders 注文
+注文
 ------
 
-Order Validation 注文バリデーション
+注文バリデーション
 ^^^^^^^^^^^^^^^^
 
-Binance has a number of rules around symbol pair orders with validation on minimum price, quantity and total order value.
 Binanceには、通貨ペアの注文に対して、最低価格、数、総注文価格についてのルールがあります。
 
-Read more about their specifics in the `Filters <https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#filters>`_
-section of the official API.
-詳細は、`Filters <https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#filters>`_のofficial APIのセクションを参照してください。
+詳細は、 `Filters <https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md#filters>`_ のオフィシャルAPIのセクションを参照してください。
 
 
-It can be helpful to format the output using the following snippet
 下記のスニペットを参考に、出力の整形をしてください。
 
 .. code:: python
@@ -25,8 +21,6 @@ It can be helpful to format the output using the following snippet
     amt_str = "{:0.0{}f}".format(amount, precision)
 
 
-`Fetch all orders <binance.html#binance.client.Client.get_all_orders>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `全注文の読み込み <binance.html#binance.client.Client.get_all_orders>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -35,16 +29,13 @@ It can be helpful to format the output using the following snippet
     orders = client.get_all_orders(symbol='BNBBTC', limit=10)
 
 
-`Place an order <binance.html#binance.client.Client.create_order>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `注文送信 <binance.html#binance.client.Client.create_order>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-**Place an order　注文送信**
+**注文送信**
 
-Use the `create_order` function to have full control over creating an order
-注文の作成は、`create_order`関数を使用してください。
+注文の作成は、 `create_order` 関数を使用してください。
 
 .. code:: python
 
@@ -57,9 +48,8 @@ Use the `create_order` function to have full control over creating an order
         quantity=100,
         price='0.00001')
 
-**Place a limit order　指値注文の送信**
+**指値注文の送信**
 
-Use the helper functions to easily place a limit buy or sell order
 指値買いまたは売りの注文をするにはヘルパー関数を使用してください。
 
 .. code:: python
@@ -75,9 +65,8 @@ Use the helper functions to easily place a limit buy or sell order
         price='0.00001')
 
 
-**Place a market order　成行注文**
+**成行注文**
 
-Use the helper functions to easily place a market buy or sell order
 成行買いまたは売りの注文をするにはヘルパー関数を使用してください。
 
 .. code:: python
@@ -90,13 +79,10 @@ Use the helper functions to easily place a market buy or sell order
         symbol='BNBBTC',
         quantity=100)
 
-`Place a test order <binance.html#binance.client.Client.create_test_order>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `テスト注文の送信 <binance.html#binance.client.Client.create_test_order>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Creates and validates a new order but does not send it into the exchange.
 新規注文を作成し、バリデートしますが、取引所には送信しません。
 
 .. code:: python
@@ -110,8 +96,6 @@ Creates and validates a new order but does not send it into the exchange.
         quantity=100,
         price='0.00001')
 
-`Check order status <binance.html#binance.client.Client.get_order>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `注文状況確認 <binance.html#binance.client.Client.get_order>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -122,8 +106,6 @@ Creates and validates a new order but does not send it into the exchange.
         orderId='orderId')
 
 
-`Cancel an order <binance.html#binance.client.Client.cancel_order>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `注文キャンセル <binance.html#binance.client.Client.cancel_order>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -134,8 +116,6 @@ Creates and validates a new order but does not send it into the exchange.
         orderId='orderId')
 
 
-`Get all open orders <binance.html#binance.client.Client.get_open_orders>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `全てのオープン注文の取得 <binance.html#binance.client.Client.get_open_orders>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -143,8 +123,6 @@ Creates and validates a new order but does not send it into the exchange.
 
     orders = client.get_open_orders(symbol='BNBBTC')
 
-`Get all orders <binance.html#binance.client.Client.get_all_orders>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `全ての注文の取得 <binance.html#binance.client.Client.get_all_orders>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -153,11 +131,9 @@ Creates and validates a new order but does not send it into the exchange.
     orders = client.get_all_orders(symbol='BNBBTC')
 
 
-Account
--------
+アカウント
+----------
 
-`Get account info <binance.html#binance.client.Client.get_account>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `アカウント情報の取得 <binance.html#binance.client.Client.get_account>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -165,8 +141,6 @@ Account
 
     info = client.get_account()
 
-`Get asset balance <binance.html#binance.client.Client.get_asset_balance>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `口座残高の取得 <binance.html#binance.client.Client.get_asset_balance>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -174,8 +148,6 @@ Account
 
     balance = client.get_asset_balance(asset='BTC')
 
-`Get account status <binance.html#binance.client.Client.get_account_status>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `口座状況の取得 <binance.html#binance.client.Client.get_account_status>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -184,8 +156,6 @@ Account
 
     status = client.get_account_status()
 
-`Get trades <binance.html#binance.client.Client.get_my_trades>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `取引情報の取得 <binance.html#binance.client.Client.get_my_trades>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
