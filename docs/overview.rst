@@ -11,6 +11,8 @@
 
 ``python-binance`` は `_日本語 <https://pypi.python.org/pypi/python-binance/>`_ 確認
 
+``python-binance``は`_日本語 <https://pypi.python.org/pypi/python-binance/>`_ 確認
+
 
 ``python-binance``は``pip``により`PYPI <https://pypi.python.org/pypi/python-binance/>`_からインストールできます。
 
