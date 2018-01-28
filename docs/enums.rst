@@ -1,8 +1,7 @@
-Enumerated Types 列挙型
+列挙型
 ================
 
-Binance defines Enumerated Types for Order Types, Order Side, Time in Force, Order response and Kline intervals these are found on `binance.client.Client`.
-Binanceは、Order Types, Order Side, Time in Force, Order response, Kline intervalsに対して列挙型を提供しています。`binance.client.Client`で確認することができます。
+Binanceは、Order Types, Order Side, Time in Force, Order response, Kline intervalsに対して列挙型を提供しています。 `binance.client.Client` で確認することができます。
 
 .. code:: python
 
@@ -52,8 +51,7 @@ Binanceは、Order Types, Order Side, Time in Force, Order response, Kline inter
     ORDER_RESP_TYPE_FULL = 'FULL'
 
 
-For Websocket Depth these are found on `binance.websockets.BinanceSocketManager`
-Websocket Depth に関しては、`binance.websockets.BinanceSocketManager`で確認することができます。
+Websocket Depth に関しては、 `binance.websockets.BinanceSocketManager` で確認することができます。
 
 .. code:: python
 
@@ -61,7 +59,6 @@ Websocket Depth に関しては、`binance.websockets.BinanceSocketManager`で�
     WEBSOCKET_DEPTH_10 = '10'
     WEBSOCKET_DEPTH_20 = '20'
 
-To use in your code reference either binance.client.Client or binance.websockets.BinanceSocketManager
 コード内で使用するには、binance.client.Client または binance.websockets.BinanceSocketManagerを参照してください。
 
 .. code:: python
