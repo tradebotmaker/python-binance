@@ -30,43 +30,36 @@ APIコールエラーの際に、binance.exceptions.BinanceAPIExceptionが発生
 BinanceOrderException
 ---------------------
 
-注文を送信する際、`Binance Trading Rules <https://binance.zendesk.com/hc/en-us/articles/115000594711>`_にパラメータが適合するかかくにんするため、バリデートされます。
+注文を送信する際、 `Binance Trading Rules <https://binance.zendesk.com/hc/en-us/articles/115000594711>`_ にパラメータが適合するか確認するため、バリデートされます。
 
-The following exceptions extend `BinanceOrderException`.
-下記の例外は、`BinanceOrderException`を継承します。
+下記の例外は、 `BinanceOrderException` を継承します。
 
 BinanceOrderMinAmountException
 ------------------------------
 
-Raised if the specified amount isn't a multiple of the trade minimum amount.
 指定されたamountがtrade minimum amountの倍数ではない時に発生。
 
 BinanceOrderMinPriceException
 -----------------------------
 
-Raised if the price is lower than the trade minimum price.
 priceがtrade minimum priceよりも小さい時に発生。
 
 BinanceOrderTotalPriceException
 -------------------------------
 
-Raised if the total is lower than the trade minimum total.
 totalがtrade minimum totalよりも小さい時に発生。
 
 BinanceOrderUnknownSymbolException
 ----------------------------------
 
-Raised if the symbol is not recognised.
 適合するsymbolが存在しない時に発生。
 
 BinanceOrderInactiveSymbolException
 -----------------------------------
 
-Raised if the symbol is inactive.
 symbolがアクティブではない時に発生。
 
 BinanceWithdrawException
 ------------------------
 
-Raised if the withdraw fails.
-引き出しに失敗した時に発生。
+出金に失敗した時に発生。
