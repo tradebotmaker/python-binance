@@ -21,16 +21,16 @@ Welcome to python-binance v0.6.2
     :target: https://pypi.python.org/pypi/python-binance
 
 This is an unofficial Python wrapper for the `Binance exchange REST API v1/3 <https://github.com/binance-exchange/binance-official-api-docs>`_. I am in no way affiliated with Binance, use at your own risk.
-これは`Binance exchange REST API v1/3 <https://github.com/binance-exchange/binance-official-api-docs>`_の非公式のPythonラッパーです。使用に関しては、リスクを理解してご自身の責任においてご利用ください。
+これは `Binance exchange REST API v1/3 <https://github.com/binance-exchange/binance-official-api-docs>`_ の非公式のPythonラッパーです。使用に関しては、リスクを理解してご自身の責任においてご利用ください。
 
 If you came here looking for the `Binance exchange <https://www.binance.com/?ref=21077398>`_ to purchase cryptocurrencies, then `go here <https://www.binance.com/?ref=10099792>`_. If you want to automate interactions with Binance stick around.
-`Binance<https://www.binance.com/?ref=21077398>`で仮想通貨を通常の手続きで購入するには、`こちら<https://www.binance.com/?ref=21077398>`_からご利用ください。仮想通貨取引を自動化したい場合は、引き続きこのドキュメントをお読みください。
+`Binance <https://www.binance.com/?ref=21077398>`_ で仮想通貨を通常の手続きで購入するには、 `こちら<https://www.binance.com/?ref=21077398>`_ からご利用ください。仮想通貨取引を自動化したい場合は、引き続きこのドキュメントをお読みください。
 
 Source code
   https://github.com/sammchardy/python-binance
 
 Documentation
-  https://python-binance.readthedocs.io/en/latest/
+  https://python-binance-jp.readthedocs.io/ja/latest/
 
 Binance API Telegram
   https://t.me/binance_api_english
@@ -39,7 +39,7 @@ Blog with examples
   https://sammchardy.github.io
 
 Make sure you update often and check the `Changelog <https://python-binance.readthedocs.io/en/latest/changelog.html>`_ for new features and bug fixes.
-定期的に`Changelog <https://python-binance.readthedocs.io/en/latest/changelog.html>`を確認し、新機能の追加やバグ修正がないかをチェックしてください。
+定期的に `Changelog <https://python-binance.readthedocs.io/en/latest/changelog.html>`_ を確認し、新機能の追加やバグ修正がないかをチェックしてください。
 
 Features　主な機能
 --------
@@ -62,7 +62,7 @@ Quick Start　クイックスタート
 
 
 `Generate an API Key <https://www.binance.com/userCenter/createApi.html>`_ and assign relevant permissions.
-`API Keyの生成 <https://www.binance.com/userCenter/createApi.html>`と許可設定
+`API Keyの生成 <https://www.binance.com/userCenter/createApi.html>`_ と許可設定
 
 
 .. code:: bash
@@ -135,7 +135,7 @@ Quick Start　クイックスタート
     klines = client.get_historical_klines("NEOBTC", KLINE_INTERVAL_1WEEK, "1 Jan, 2017")
 
 For more `check out the documentation <https://python-binance.readthedocs.io/en/latest/>`_.
-詳細は、`ドキュメント <https://python-binance.readthedocs.io/en/latest/>`_をお読みください。
+詳細は、`ドキュメント <https://python-binance.readthedocs.io/en/latest/>`_ をお読みください。
 ..
 	Donate
 	------
