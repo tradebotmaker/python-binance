@@ -136,27 +136,3 @@ Quick Start　クイックスタート
 
 For more `check out the documentation <https://python-binance.readthedocs.io/en/latest/>`_.
 詳細は、`ドキュメント <https://python-binance.readthedocs.io/en/latest/>`_ をお読みください。
-..
-	Donate
-	------
-	
-	If this library helped you out feel free to donate.
-	
-	- ETH: 0xD7a7fDdCfA687073d7cC93E9E51829a727f9fE70
-	- LTC: LPC5vw9ajR1YndE1hYVeo3kJ9LdHjcRCUZ
-	- NEO: AVJB4ZgN7VgSUtArCt94y7ZYT6d5NDfpBo
-	- BTC: 1Dknp6L6oRZrHDECRedihPzx2sSfmvEBys
-	
-	Other Exchanges
-	---------------
-	
-	If you use `Quoinex <https://accounts.quoinex.com/sign-up?affiliate=PAxghztC67615>`_
-	or `Qryptos <https://accounts.qryptos.com/sign-up?affiliate=PAxghztC67615>`_ check out my `python-quoine <https://github.com/sammchardy/python-quoine>`_ library.
-		
-	If you use `Kucoin <https://www.kucoin.com/#/?r=E42cWB>`_ check out my `python-kucoin <https://github.com/sammchardy/python-kucoin>`_ library.
-		
-	If you use `IDEX <https://idex.market>`_ check out my `python-idex <https://github.com/sammchardy/python-idex>`_ library.
-		
-	If you use `BigONE <https://big.one>`_ check out my `python-bigone <https://github.com/sammchardy/python-bigone>`_ library.
-		
-	.. image:: https://analytics-pixel.appspot.com/UA-111417213-1/github/python-binance?pixel&useReferer
