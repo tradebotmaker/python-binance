@@ -22,7 +22,7 @@ Welcome to python-binance v0.6.2
 
 これは `Binance exchange REST API v1/3 <https://github.com/binance-exchange/binance-official-api-docs>`_ の非公式のPythonラッパーです。使用に関しては、リスクを理解してご自身の責任においてご利用ください。
 
-`Binance <https://www.binance.com/?ref=21077398>`_ で仮想通貨を通常の手続きで購入するには、 `こちら<https://www.binance.com/?ref=21077398>`_ からご利用ください。仮想通貨取引を自動化したい場合は、引き続きこのドキュメントをお読みください。
+`Binance <https://www.binance.com/?ref=21077398>`_ で仮想通貨を通常の手続きで購入するには、 `こちら <https://www.binance.com/?ref=21077398>`_ からご利用ください。仮想通貨取引を自動化したい場合は、引き続きこのドキュメントをお読みください。
 
 Source code
   https://github.com/sammchardy/python-binance
